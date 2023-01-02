@@ -98,6 +98,7 @@ header {
   width: calc(100% - 100px);
   height: 100px;
   padding: 0 5px 0 10px;
+  text-align: left;
 }
 
 .featured-speaker__info > h4 {
@@ -108,13 +109,13 @@ header {
 
 .featured-speaker__info > h5 {
   margin: 7px 0;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--orange);
   font-style: italic;
 }
 
 .featured-speaker__info > p {
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .show-more {
@@ -206,6 +207,14 @@ header {
 
   .featured-speaker.desktop-only {
     display: flex;
+  }
+
+  .featured-speaker__info > h5 {
+    font-size: 12px;
+  }
+  
+  .featured-speaker__info > p {
+    font-size: 11px;
   }
 
   .dark-chess-bg {
