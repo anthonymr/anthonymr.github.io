@@ -88,7 +88,6 @@ header {
 .dark-chess-bg {
   width: 50%;
   height: 50%;
-  
   background-image: url('../img/dark-chees-background.svg');
   background-size: 18%;
   background-repeat: round;
@@ -189,7 +188,7 @@ header {
     text-transform: uppercase;
     border-bottom: 1px solid var(--white);
     padding: 30px 0 0 0;
-  } 
+  }
 
   .featured-speakers {
     padding: 70px var(--desktop-padding);
@@ -212,7 +211,7 @@ header {
   .featured-speaker__info > h5 {
     font-size: 12px;
   }
-  
+
   .featured-speaker__info > p {
     font-size: 11px;
   }

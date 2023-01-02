@@ -102,7 +102,7 @@ section {
   .header-content__location {
     position: absolute;
     top: 20px;
-    right: 40px;;
+    right: 40px;
     font-size: 12px;
     color: var(--medium);
     cursor: pointer;

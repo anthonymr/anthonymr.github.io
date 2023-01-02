@@ -3,9 +3,9 @@ const floatingMenu = document.querySelector('.floating-menu');
 const closeIcon = document.querySelector('.floating-menu__close > img');
 
 hamburguerIcon.addEventListener('click', () => {
-    floatingMenu.classList.remove('hidden');
-})
+  floatingMenu.classList.remove('hidden');
+});
 
 closeIcon.addEventListener('click', () => {
-    floatingMenu.classList.add('hidden');
-})
+  floatingMenu.classList.add('hidden');
+});
