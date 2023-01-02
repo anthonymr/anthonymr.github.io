@@ -1,0 +1,130 @@
+header {
+  background-image: url('../img/background.svg');
+}
+
+.p-box {
+  font-size: 14px;
+}
+
+.main-program {
+  background-color: var(--dark-blue);
+  padding: 20px 20px 40px 20px;
+  background-image: url('../img/cross.svg');
+  background-size: 32px;
+  color: var(--white);
+}
+
+.main-program__program {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.main-program__program > li {
+  background-color: rgba(255, 255, 255, 0.122);
+  padding: 20px 0;
+  width: calc(100% + 10px);
+  margin: 8px -5px;
+  display: flex;
+}
+
+.program__image {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program__image img {
+  width: 30px;
+}
+
+.program__title {
+  width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.program__title h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.program__content {
+  width: calc(100% - 150px);
+  font-size: 11px;
+  padding-right: 10px;
+  line-height: 16px;
+}
+
+.featured-speakers {
+  padding: 20px 20px 40px 20px;
+  background-color: var(--whtie);
+}
+
+.featured-speaker {
+  display: flex;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+.featured-speaker__picture {
+  width: 100px;
+  height: 100px;
+}
+
+.featured-speaker__picture img {
+  width: 85%;
+  height: 85%;
+  margin-top: -38%;
+  margin-left: 12%;
+}
+
+.dark-chess-bg {
+  width: 50%;
+  height: 50%;
+  
+  background-image: url('../img/dark-chees-background.svg');
+  background-size: 18%;
+  background-repeat: round;
+}
+
+.featured-speaker__info {
+  width: calc(100% - 100px);
+  height: 100px;
+  padding: 0 5px 0 10px;
+}
+
+.featured-speaker__info > h4 {
+  margin: 0;
+  color: var(--black);
+  font-size: 14px;
+}
+
+.featured-speaker__info > h5 {
+  margin: 7px 0;
+  font-size: 10px;
+  color: var(--orange);
+  font-style: italic;
+}
+
+.featured-speaker__info > p {
+  font-size: 9px;
+}
+
+.show-more {
+  border: 1px solid var(--light);
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+}
+
+.header-content {
+  padding: 30px 20px 65px 20px;
+}

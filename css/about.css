@@ -1,0 +1,108 @@
+header {
+  background-image: url('../img/background.svg');
+}
+
+section {
+  text-align: center;
+}
+
+footer {
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer img {
+  width: 100%;
+}
+
+.p-box--logo {
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+
+.force-wrap {
+  max-width: 250px;
+}
+
+.p-box {
+  font-size: 12px;
+}
+
+.header-content {
+  padding: 30px 20px 30px 20px;
+}
+
+.logo-section {
+  padding: 20px 20px 40px 20px;
+  color: var(--dark);
+}
+
+.legacy-section {
+  border-top: 1px solid var(--light);
+  padding: 20px 20px 40px 20px;
+  color: var(--dark);
+}
+
+.legacy-section > article {
+  margin: 15px 20px;
+  width: calc(100% - 40px);
+  background-size: cover;
+}
+
+.legacy-section__summit {
+  height: 180px;
+  background-color: #ec524299;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.legacy-section__summit > div:first-child {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#buenos-aires-2013 {
+  background-image: url('../img/summits/2013.jpg');
+}
+
+#warsaw-2011 {
+  background-image: url('../img/summits/2011.jpg');
+}
+
+.partner-section {
+  padding: 20px 20px 10px 20px;
+  background-color: var(--dark-background);
+  color: var(--white);
+}
+
+.partners {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.partners li {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.partners img {
+  width: 60%;
+}
