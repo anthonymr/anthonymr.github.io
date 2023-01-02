@@ -73,7 +73,7 @@ a {
   color: var(--black);
   font-weight: 800;
   line-height: 14px;
-  border-bottom: 1px solid var(--medium)
+  border-bottom: 1px solid var(--medium);
 }
 
 footer {
@@ -109,7 +109,6 @@ footer img {
   color: white;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .p-box {
@@ -314,7 +313,7 @@ footer img {
     display: flex;
     align-items: center;
     font-size: 12px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
   }
 
   .big-nav__logo {
