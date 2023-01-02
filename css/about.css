@@ -6,21 +6,6 @@ section {
   text-align: center;
 }
 
-footer {
-  padding: 40px;
-  display: flex;
-  gap: 20px;
-  font-size: 10px;
-}
-
-footer div {
-  flex: 1;
-}
-
-footer img {
-  width: 100%;
-}
-
 .p-box--logo {
   width: calc(100% - 40px);
   margin: 20px;
@@ -49,7 +34,7 @@ footer img {
   color: var(--dark);
 }
 
-.legacy-section > article {
+.legacy-section__articles > article {
   margin: 15px 20px;
   width: calc(100% - 40px);
   background-size: cover;
@@ -82,27 +67,92 @@ footer img {
   background-image: url('../img/summits/2011.jpg');
 }
 
-.partner-section {
-  padding: 20px 20px 10px 20px;
-  background-color: var(--dark-background);
-  color: var(--white);
-}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    max-width: 700px;
+  }
 
-.partners {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0;
-}
+  footer {
+    background-color: var(--dark-background);
+    color: white;
+  }
 
-.partners li {
-  width: calc(100% / 3);
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+  .header-content {
+    padding: 70px var(--desktop-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
 
-.partners img {
-  width: 60%;
+  .header-content h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .header-content > .orange-line {
+    margin-bottom: 50px;
+  }
+
+  .header-content > .p-box--light {
+    margin-bottom: 50px;
+  }
+
+  .header-content__location {
+    position: absolute;
+    top: 20px;
+    right: 40px;;
+    font-size: 12px;
+    color: var(--medium);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+  }
+
+  .header-content__location img {
+    height: 12px;
+  }
+
+  .header-content__location span {
+    color: var(--orange);
+    margin: 0 5px;
+  }
+
+  .p-box {
+    max-width: 900px;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--desktop-padding);
+  }
+
+  .logo-container {
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  .force-wrap {
+    max-width: 100%;
+  }
+
+  .legacy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--desktop-padding);
+  }
+
+  .legacy-section__articles {
+    display: flex;
+    max-width: 1000px;
+  }
+
+  .legacy-section__summit {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

@@ -14,21 +14,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <script src="js/index_see_more.js" defer></script>
+    <script src="js/global_floating_menu.js" defer></script>
 </head>
 
 <body>
     <main>
         <header>
-            <nav>
+            <nav class="mobile-only">
                 <div class="hamburguer-menu-icon">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </nav>
+            <nav class="small-nav desktop-only">
+                <ul class="small-nav__menu">
+                    <li><img src="img/social/facebook.svg"></li>
+                    <li><img src="img/social/twitter.svg"></li>
+                    <li>Logout</li>
+                    <li>Mypage</li>
+                    <li>Korean</li>
+                </ul>
+            </nav>
+            <nav class="big-nav desktop-only">
+                <div class="big-nav__logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="Open Source Software Conference 2023"></a>
+                </div>
+                <div class="big-nav__menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Sponsor</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="big-nav__button">
+                    <div>
+                        CC Campaing
+                    </div>
+                </div>
+            </nav>
             <section class="header-content">
                 <h2 class="t-orange">"Hello! Open world"</h2>
-                <h1 class="texture-text"> Open Source Software Conference 2023</h1>
+                <h1 class="texture-text">Open Source Software Conference 2023</h1>
                 <p class="p-box p-box--dark">
                     An umbrella conference, composed of a collection of 
                     events covering the most important technologies, 
@@ -72,7 +103,10 @@
                 </li>
             </ul>
             <div class="f-column">
-                <button>Join OS Software Conference 2023</button>
+                <button>
+                    <span class="mobile-only">Join OS Software Conference 2023</span>
+                    <span class="desktop-only">See the whole program</span>
+                </button>
             </div>
             
         </section>
@@ -83,7 +117,7 @@
                 <div class="orange-line"></div>
             </div>
 
-            <div class="f-column">
+            <div class="f-column speakers-list">
                 <div class="featured-speaker">
                     <div class="featured-speaker__picture">
                         <div class="dark-chess-bg"></div>
@@ -110,10 +144,10 @@
                     </div>
                 </div>
 
-                <div class="featured-speaker hidden">
+                <div class="featured-speaker desktop-only hidden-speaker">
                     <div class="featured-speaker__picture">
                         <div class="dark-chess-bg"></div>
-                        <img src="../img/profiles/2.jpg">
+                        <img src="../img/profiles/3.jpg">
                     </div>
                     <div class="featured-speaker__info">
                         <h4>Ellis Scott</h4>
@@ -123,10 +157,10 @@
                     </div>
                 </div>
 
-                <div class="featured-speaker hidden">
+                <div class="featured-speaker desktop-only hidden-speaker">
                     <div class="featured-speaker__picture">
                         <div class="dark-chess-bg"></div>
-                        <img src="../img/profiles/2.jpg">
+                        <img src="../img/profiles/4.jpg">
                     </div>
                     <div class="featured-speaker__info">
                         <h4>Ellis Scott</h4>
@@ -136,10 +170,10 @@
                     </div>
                 </div>
 
-                <div class="featured-speaker hidden">
+                <div class="featured-speaker desktop-only hidden-speaker">
                     <div class="featured-speaker__picture">
                         <div class="dark-chess-bg"></div>
-                        <img src="../img/profiles/2.jpg">
+                        <img src="../img/profiles/5.jpg">
                     </div>
                     <div class="featured-speaker__info">
                         <h4>Ellis Scott</h4>
@@ -149,10 +183,10 @@
                     </div>
                 </div>
 
-                <div class="featured-speaker hidden">
+                <div class="featured-speaker desktop-only hidden-speaker">
                     <div class="featured-speaker__picture">
                         <div class="dark-chess-bg"></div>
-                        <img src="../img/profiles/2.jpg">
+                        <img src="../img/profiles/6.jpg">
                     </div>
                     <div class="featured-speaker__info">
                         <h4>Ellis Scott</h4>
@@ -162,11 +196,44 @@
                     </div>
                 </div>
 
-                <div class="show-more">More <div class="chevron"></div></div>
+                <div class="show-more mobile-only"><span>More</span> <span>Less</span> <div class="chevron"></div></div>
             </div>
         </section>
+        <section class="partner-section desktop-only">
+            <div class="f-column">
+                <h2 class="force-wrap">Partner</h2>
+                <div class="orange-line"></div>
+            </div>
+            <ul class="partners">
+                <li><img src="img/partners/mozilla.svg"></li>
+                <li><img src="img/partners/google.svg"></li>
+                <li><img src="img/partners/naver.svg"></li>
+                <li><img src="img/partners/daumkakao.svg"></li>
+                <li><img src="img/partners/airbnb.svg"></li>
+            </ul>
+        </section>
+        <footer class="desktop-only">
+            <div>
+                <img src="img/logo-black.svg">
+            </div>
+            <div>
+                2015 Creative Commons Korea Some Rights Reserved.
+            </div>
+        </footer>
     </main>
 
+    <section class="floating-menu hidden mobile-only">
+        <div class="floating-menu__close"><img src="img/icons/close.svg"></div>
+        <div class="floating-menu__items">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sponsor</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 
 </html>
