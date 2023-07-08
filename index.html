@@ -9,7 +9,14 @@
 </head>
 <body>
   <nav class="dark">
-    <ul>
+    <div class="mobile-menu" onclick="toggleMenu()">
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <ul class="menu hidden" id="menu">
       <li><a onclick="goTo('home')">Home</a></li>
       <li><a onclick="goTo('last-projects')">Last projects</a></li>
       <li><a onclick="goTo('current-stack')">Current stack</a></li>

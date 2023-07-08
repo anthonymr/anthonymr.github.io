@@ -5,3 +5,8 @@ function goTo(id) {
         behavior: 'smooth'
     });
 }
+
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+}

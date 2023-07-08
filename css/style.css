@@ -547,6 +547,31 @@ textarea {
   font-weight: 300;
 }
 
+/* Scroll bar */
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px var(--dark);
+	background-color: var(--light);
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: var(--light);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--dark);	
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+  display:none
+}
+
 @media only screen and (max-width: 991px) {
   header > div,
   header > div > .title {
@@ -592,23 +617,43 @@ textarea {
   section.projects .project-screen {
     height: 250px;
   }
-}
 
-/* Scroll bar */
+  .mobile-menu {
+    display: block;
+  }
 
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px var(--dark);
-	background-color: var(--light);
-}
+  .mobile-menu > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: -5px;
+    cursor: pointer;
+    user-select: none;
+  }
 
-::-webkit-scrollbar
-{
-	width: 5px;
-	background-color: var(--light);
-}
+  .mobile-menu > div > div {
+    width: 20px;
+    height: 2px;
+    background-color: var(--light);
+  }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: var(--dark);	
+  .menu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 43px);
+    background-color: var(--dark);
+    top: 43px;
+    left: 0;
+    padding: 30px 70px;
+    font-size: 24px;
+  }
+
+  .menu li {
+    margin-bottom: 30px;
+  }
+
+  .menu.hidden {
+    display: none;
+  }
 }
