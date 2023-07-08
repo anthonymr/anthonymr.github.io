@@ -4,6 +4,7 @@ function goTo(id) {
         top: element.offsetTop - 43,
         behavior: 'smooth'
     });
+    toggleMenu();
 }
 
 function toggleMenu() {
