@@ -7,6 +7,9 @@ function goTo(id) {
 }
 
 function toggleMenu() {
-    var menu = document.getElementById('menu');
+    let menu = document.getElementById('menu');
+    let mobileMenu = document.getElementById('mobile-menu');
+
     menu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('close');
 }
