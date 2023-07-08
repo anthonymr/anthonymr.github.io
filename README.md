@@ -22,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 HTML + basic JavaScript Capstone <a name="about-project"></a>
+# 📖 Anthony Martin Portfolio <a name="about-project"></a>
 
-**HTML + basic JavaScript Capstone** is a professional web page about the Open Source community.
+**Anthony Martin Portfolio** is a webpage where you can find all my tech and soft abilities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -35,7 +35,7 @@
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/javascript">JS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/javascript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -69,7 +69,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:anthonymr/CSPM1.git
+  git clone git@github.com:anthonymr/Anthony-Martin-Portfolio.git
 ```
 
 ### Install
@@ -78,7 +78,7 @@ Install this project with:
 
 ```sh
   cd my-folder
-  git clone git@github.com:anthonymr/CSPM1.git
+  git clone git@github.com:anthonymr/Anthony-Martin-Portfolio.git
 ```
 
 ### Usage
@@ -103,11 +103,9 @@ To run the project, open index.html in your web browser.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Program page**
-- [ ] **Join page**
-- [ ] **Sponsor page**
-- [ ] **News page**
-- [ ] **CC Campaing page**
+- [ ] **Web page body**
+- [ ] **Web page footer**
+- [ ] **Desktop design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,8 +131,7 @@ If you like this project, please, share it with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by **Cindy Shin** in Behance.
-Thank you very much [Cindy](https://www.behance.net/adagio07).
+I would like to thank to all my Mricronauts partners...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
