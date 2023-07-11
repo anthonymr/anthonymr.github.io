@@ -96,6 +96,7 @@ function populateProjects(projects) {
             <p class="description">${project.description}</p>
             <p class="kind">${project.type}</p>
         </div>
+        <div class="see-more"><span>see more</span></div>
         `;
 
         container.appendChild(projectContainer);
