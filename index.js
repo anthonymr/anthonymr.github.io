@@ -175,9 +175,24 @@ function setCapture(captures) {
             slideTitle.innerHTML = activeProject?.name;
 
             slideDescription.innerHTML = activeProject?.longDescription;
+            slideDescription.appendChild(generateTechnologies(activeProject?.technologies));
         }
     });
 }
+
+function generateTechnologies(technologies) {
+    let container = document.createElement('span');
+
+    technologies.forEach(technology => {
+        const technologyLabel = document.createElement('span');
+        technologyLabel.classList.add('tech-label');
+        technologyLabel.innerHTML = technology;
+        container.appendChild(technologyLabel);
+    });
+
+    return container;
+}
+
 
 function nextCapture(captures) {
     let activeCaptureIndex = captures.findIndex(capture => capture.active);
