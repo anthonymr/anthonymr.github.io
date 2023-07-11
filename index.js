@@ -3,7 +3,7 @@ const PROJECTS = [
         name: 'Ruby resorts',
         type: 'full-stack',
         description: 'Room booking system',
-        longDescription: 'Ruby Resorts project was developed using React, Redux, Ruby on Rails, and PostgreSQL. We used JWT tokens for authentication between the front and back ends. A JWT token will be generated every time a user logs in. A regular user can signup, then log in with a username and password. The user can get a list of Suites, can get details of each suite, will be able to reserve a suite, and can access their past reservations.',
+        longDescription: 'Ruby Resorts project was developed using React, Redux, Ruby on Rails, and PostgreSQL. Ir uses JWT tokens for authentication between the front and back ends. A JWT token will be generated every time a user logs in. A regular user can signup, then log in with a username and password. The user can get a list of Suites, can get details of each suite, will be able to reserve a suite, and can access their past reservations.',
         image: 'ruby-resorts.svg',
         live: 'https://ruby-resorts-front-end.onrender.com/',
         github: 'https://github.com/anthonymr/ruby-resorts-backend',
