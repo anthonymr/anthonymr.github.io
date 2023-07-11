@@ -157,6 +157,14 @@ function closeModal() {
     modal.classList.add('hidden');
 }
 
+function resetCaptures(captures) {
+    captures.forEach(capture => {
+        capture.active = false;
+    });
+
+    capture[0].active = true;
+}
+
 function setCapture(captures) {
     captures.forEach(capture => {
         if (capture.active) {
