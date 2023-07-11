@@ -188,5 +188,36 @@
       </form>
     </div>
   </section>
+
+  <section class="modal hidden" id="modal">
+    <div>
+      <div class="close">
+        <img src="/images/close.svg" alt="Close" onclick="closeModal()">
+      </div>
+      <div class="carousel" id="carousel">
+        <div class="body">
+          <div class="slide active">
+            <div class="screen" >
+              <div class="arrow left" onclick="previousCapture(activeProject.captures)">
+                <img src="images/chevron-left.svg">
+              </div>
+              <img id="slide-screen">
+              <div class="arrow right" onclick="nextCapture(activeProject.captures)">
+                <img src="images/chevron-right.svg">
+              </div>
+            </div>
+            <h2 id="slide-title"></h2>
+            <div class="description" id="slide-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas non sapiente animi explicabo doloribus quisquam atque ut modi, nulla sed debitis, porro numquam praesentium eligendi, eaque nostrum dolore facere a.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a id="live-version" target="_blank"><button>Live version</button></a>
+        <a id="github-repo" target="_blank"><button>GitHub repo</button></a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
